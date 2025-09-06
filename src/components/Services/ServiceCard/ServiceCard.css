@@ -1,0 +1,68 @@
+.service__card{
+    background: var(--color-ui-secondary);
+    padding: 30px;
+    border-radius: var(--radius-3);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service__card:hover{
+    border-color: var(--color-primary);
+    background: var(--color-ui-variant);
+    transform: translateY(-5px);
+}
+
+.service__card .icon__container{
+    font-size: 45px;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.service__card:hover .icon__container{
+    transform: scale(1.1);
+    color: var(--color-primary);
+}
+
+.service__card .name{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 15px 0;
+    color: var(--color-text);
+}
+
+.service__card .description{
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+    .service__card {
+        padding: 25px;
+    }
+    
+    .service__card .icon__container {
+        font-size: 35px;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    .service__card .name {
+        font-size: 16px;
+    }
+    
+    .service__card .description {
+        font-size: 14px;
+    }
+}
